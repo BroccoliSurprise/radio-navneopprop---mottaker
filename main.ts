@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    settID(IDnummer + 1)
+    settID(IDnummer + -1)
 })
 radio.onReceivedString(function (receivedString) {
     if (receivedString.includes("ping")) {
@@ -11,7 +11,7 @@ radio.onReceivedString(function (receivedString) {
     }
 })
 input.onButtonPressed(Button.B, function () {
-    settID(IDnummer + -1)
+    settID(IDnummer + 1)
 })
 function settID (num: number) {
     IDnummer = num
